@@ -38,4 +38,6 @@ func main() {
 	fmt.Println(Soma(m2))
 
 	fmt.Println(Compara(10, 10))
+
+	//mais info pacote https://pkg.go.dev/golang.org/x/exp/constraints
 }
