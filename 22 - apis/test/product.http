@@ -9,7 +9,11 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8000/products/038f94fc-5c1d-4b0f-ac28-560542805460
+GET http://localhost:8000/products/76d620e7-c4e5-429c-af79-1dd02f1441c4
+
+###
+GET http://localhost:8000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzQ1OTYyOTcsInN1YiI6IjIyN2FiMDk3LTI1OWYtNDFlMC1iYjBlLWE0NWQ4MmY2Nzk3MiJ9.mW7tKiH03d8WhkQ9m15Qjxmn5gcat_SFPJxeyt8bicQ
 
 ###
 PUT http://localhost:8000/products/1645
@@ -19,3 +23,6 @@ Content-Type: application/json
     "name": "product 2",
     "price": 250.59
 }
+
+###
+DELETE http://localhost:8000/products/038f94fc-5c1d-4b0f-ac28-560542805460
