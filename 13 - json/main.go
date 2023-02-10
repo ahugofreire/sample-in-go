@@ -13,7 +13,7 @@ type Conta struct {
 func main() {
 	conta := Conta{
 		Numero: 1,
-		Saldo:  100.0,
+		Saldo:  1000.0,
 	}
 	result, err := json.Marshal(conta) //converter para Json
 	if err != nil {
