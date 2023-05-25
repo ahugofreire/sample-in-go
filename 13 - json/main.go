@@ -21,13 +21,13 @@ func main() {
 	}
 	println(string(result))
 
-	//Converter e já retorna
+	//Converter e já retorna o encode
 	err = json.NewEncoder(os.Stdout).Encode(conta)
 	if err != nil {
 		println(err)
 	}
 
-	//Converter de json para struct
+	//Converter de json para struct, como ponteiro
 	jsonPuro := []byte(`{"Numero": 2,"Saldo": 220.0}`)
 	var contaX Conta
 	err = json.Unmarshal(jsonPuro, &contaX)
